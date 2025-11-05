@@ -29,9 +29,9 @@ public class SecurityUtils {
         return getCurrentUser().getRole().name();
     }
 
-    public static Long getCurrentRestauranteId() {
+    public static Long getCurrentEmpresaId() {
         Usuario usuario = getCurrentUser();
-        return usuario.getRestauranteId();
+        return usuario.getEmpresaId();
     }
 
     public static boolean hasRole(String role) {
@@ -47,16 +47,16 @@ public class SecurityUtils {
         return hasRole("ADMIN");
     }
 
-    public static boolean isCliente() {
-        return hasRole("CLIENTE");
+    public static boolean isPassageiro() {
+        return hasRole("PASSAGEIRO");
     }
 
-    public static boolean isRestaurante() {
-        return hasRole("RESTAURANTE");
+    public static boolean isEmpresa() {
+        return hasRole("EMPRESA");
     }
 
-    public static boolean isEntregador() {
-        return hasRole("ENTREGADOR");
+    public static boolean isVeiculo() {
+        return hasRole("VEICULO");
     }
 }
 

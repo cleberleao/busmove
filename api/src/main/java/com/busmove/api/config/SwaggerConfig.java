@@ -24,9 +24,9 @@ public class SwaggerConfig {
 
         return new OpenAPI()
                 .info(new Info()
-                        .title("Estacionamento API")
+                        .title("Busmove API")
                         .version("1.0.0")
-                        .description("API for managing estacionamento operations")
+                        .description("API for managing BusMove operations")
                         .contact(new Contact()
                                 .name("Cleber Leão Support")
                                 .email("dev@cleberleao.com")

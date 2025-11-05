@@ -57,10 +57,10 @@ public class AuthController {
                 .email(request.getEmail())
                 .senha(passwordEncoder.encode(request.getSenha()))
                 .nome(request.getNome())
-                .role(request.getRole() != null ? request.getRole() : Role.CLIENTE)
+                .role(request.getRole() != null ? request.getRole() : Role.PASSAGEIRO)
                 .dataCriacao(LocalDateTime.now())
                 .ativo(true)
-                .restauranteId(request.getRestauranteId())
+                .empresaId(request.getEmpresaId())
                 .build();
 
         usuarioRepository.save(usuario);

@@ -17,6 +17,6 @@ public class UsuarioResponseDTO {
     private String role;
     private boolean ativo;
     private LocalDateTime dataCriacao;
-    private Long restauranteId;
+    private Long empresaId;
 
 }

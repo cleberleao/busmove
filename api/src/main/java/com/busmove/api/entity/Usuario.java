@@ -45,8 +45,8 @@ public class Usuario implements UserDetails {
     @Column(name = "data_criacao", nullable = false)
     private LocalDateTime dataCriacao;
 
-    @Column(name = "restaurante_id")
-    private Long restauranteId;
+    @Column(name = "empresa_id")
+    private Long empresaId;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -90,7 +90,7 @@ public class Usuario implements UserDetails {
         return ativo;
     }
 
-    public Long getRestaurante() {
-        return restauranteId;
+    public Long getempresa() {
+        return empresaId;
     }
 }

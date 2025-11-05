@@ -1,7 +1,6 @@
 package com.busmove.api.entity;
 
-import com.busmove.api.dto.RequestVeiculoDTO;
-import com.busmove.api.dto.ResponseVeiculoDTO;
+import com.busmove.api.dto.request.VeiculoRequestDTO;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
@@ -31,7 +30,7 @@ public class Veiculo {
 
     private LocalDate dataUpdate;
 
-    public Veiculo(RequestVeiculoDTO dto) {
+    public Veiculo(VeiculoRequestDTO dto) {
         this.modelo = dto.getModelo();
         this.cor = dto.getCor();
         this.placa = dto.getPlaca();

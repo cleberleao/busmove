@@ -1,7 +1,7 @@
 package com.busmove.api.servirce;
 
-import com.busmove.api.dto.RequestVeiculoDTO;
-import com.busmove.api.dto.ResponseVeiculoDTO;
+import com.busmove.api.dto.request.VeiculoRequestDTO;
+import com.busmove.api.dto.response.VeiculoResponseDTO;
 import com.busmove.api.entity.Veiculo;
 import com.busmove.api.repository.VeiculoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,9 +13,9 @@ public class VeiculoService {
     @Autowired
     VeiculoRepository veiculoRepository;
 
-    public ResponseVeiculoDTO cadastrar(RequestVeiculoDTO dto) {
+    public VeiculoResponseDTO cadastrar(VeiculoRequestDTO dto) {
         Veiculo veiculo = new Veiculo(dto);
         Veiculo save = veiculoRepository.save(veiculo);
-        return new ResponseVeiculoDTO(save);
+        return new VeiculoResponseDTO(save);
     }
 }

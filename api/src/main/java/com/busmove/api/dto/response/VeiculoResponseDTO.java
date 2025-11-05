@@ -1,4 +1,4 @@
-package com.busmove.api.dto;
+package com.busmove.api.dto.response;
 
 import com.busmove.api.entity.Veiculo;
 import lombok.AllArgsConstructor;
@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ResponseVeiculoDTO {
+public class VeiculoResponseDTO {
 
     private int id;
 
@@ -20,7 +20,7 @@ public class ResponseVeiculoDTO {
 
     private String numeroLinha;
 
-    public ResponseVeiculoDTO(Veiculo veiculo) {
+    public VeiculoResponseDTO(Veiculo veiculo) {
         this.id = veiculo.getId();
         this.modelo = veiculo.getModelo();
         this.cor = veiculo.getCor();

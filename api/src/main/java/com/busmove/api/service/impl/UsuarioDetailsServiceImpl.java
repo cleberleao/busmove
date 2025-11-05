@@ -1,7 +1,7 @@
-package com.deliverytech.delivery_api.services.impl;
+package com.busmove.api.service.impl;
 
-import com.deliverytech.delivery_api.entity.Usuario;
-import com.deliverytech.delivery_api.repository.UsuarioRepository;
+import com.busmove.api.entity.Usuario;
+import com.busmove.api.repository.UsuarioRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Primary;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

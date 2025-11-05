@@ -1,7 +1,7 @@
-package com.deliverytech.delivery_api.repository;
+package com.busmove.api.repository;
 
-import com.deliverytech.delivery_api.dto.response.UsuarioResponseDTO;
-import com.deliverytech.delivery_api.entity.Usuario;
+import com.busmove.api.dto.response.UsuarioResponseDTO;
+import com.busmove.api.entity.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

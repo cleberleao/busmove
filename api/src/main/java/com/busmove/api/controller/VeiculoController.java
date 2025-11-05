@@ -2,7 +2,7 @@ package com.busmove.api.controller;
 
 import com.busmove.api.dto.request.VeiculoRequestDTO;
 import com.busmove.api.dto.response.VeiculoResponseDTO;
-import com.busmove.api.servirce.VeiculoService;
+import com.busmove.api.service.VeiculoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

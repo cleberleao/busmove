@@ -1,4 +1,4 @@
-package com.busmove.api.servirce;
+package com.busmove.api.service;
 
 import com.busmove.api.dto.request.VeiculoRequestDTO;
 import com.busmove.api.dto.response.VeiculoResponseDTO;

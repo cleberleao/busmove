@@ -1,4 +1,4 @@
-package com.deliverytech.delivery_api.entity;
+package com.busmove.api.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -7,7 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import com.deliverytech.delivery_api.enums.Role;
+import com.busmove.api.enums.Role;
 
 import javax.net.ssl.SSLSession;
 import java.time.LocalDateTime;
